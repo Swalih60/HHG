@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { uploadToIPFS } from '../lib/pinata';
+import { uploadToIPFS } from '../../lib/pinata';
 
 const Upload = () => {
   const [file, setFile] = useState(null);
@@ -23,13 +23,13 @@ const Upload = () => {
       <input type="file" onChange={handleFileChange} />
       <button onClick={handleUpload}>Upload</button>
       {ipfsHash && (
-        <div>
+        <div> 
           <p>IPFS Hash: {ipfsHash}</p>
           <a href={`https://gateway.pinata.cloud/ipfs/${ipfsHash}`} target="_blank" rel="noopener noreferrer">
             View File
           </a>
         </div>
-      )}
+      )}  
     </div>
   );
 };
