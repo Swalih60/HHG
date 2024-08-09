@@ -5,7 +5,7 @@ export default function Home() {
   const router = useRouter();
 
   const handleButtonClick = () => {
-    router.push('/file_upload');
+    router.push('/home');
   };
 
   return (
