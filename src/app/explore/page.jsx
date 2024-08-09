@@ -1,4 +1,6 @@
-import Upload from '@/components/upload';
+'use client'
+
+import Upload from '@/components/layout/upload';
 
 export default function Home() {
   return (
